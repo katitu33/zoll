@@ -11,7 +11,8 @@ services:
   wordpress:
     image: 'docker.io/servoprivod/eee:firsttry2'
     ports:
-      - '8080:80'
+      - '80:8080'
+      - '443:8443'
     volumes:
       - 'wordpress_data:/bitnami/wordpress'
     depends_on:
